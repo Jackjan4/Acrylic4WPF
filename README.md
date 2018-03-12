@@ -8,6 +8,7 @@ Acrylic4WPF is a remake of the [Acrylic Material](https://docs.microsoft.com/en-
 ## Download
 
 Just download one of the releases here in GitHub or compile the project for yourself :)
+The project is made with .NET Framework 4.6.1.
 
 
 ## Usage
@@ -34,4 +35,4 @@ Styling your other controls like buttons etc. to look acrylic compatible has to 
 ## Further Information / ToDo
 
 - Better window drag, when dragging out of maximized state
-- 
+- Adding DependencyProperties so, acrylic effects can be made bindable
