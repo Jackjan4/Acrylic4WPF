@@ -6,7 +6,7 @@ Acrylic4WPF is a remake of the [Acrylic Material](https://docs.microsoft.com/en-
 
 
 ![Example image; empty window with transparent bg](https://i.imgur.com/GwuNif7.jpg)
-*Example image that shows a nearly empty acrlic window where the buttons, beside the close buttons are deactivated*
+*Example image that shows a nearly empty acrlic window where the buttons, beside the close button, are deactivated*
 
 
 ## Download
