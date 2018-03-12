@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{FCD94730-DB4B-46A5-8714-94EBB20EA96C}</ProjectGuid>
+    <ProjectGuid>{7DE67A28-927A-4627-BEA2-C7A5F7E05981}</ProjectGuid>
     <OutputType>library</OutputType>
-    <RootNamespace>Acryl4WPF</RootNamespace>
-    <AssemblyName>Acryl4WPF</AssemblyName>
+    <RootNamespace>Acrylic4WPF</RootNamespace>
+    <AssemblyName>Acrylic4WPF</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -60,7 +60,7 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="NoiseEffect.cs" />
+    <Compile Include="NoiseEffect\NoiseEffect.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -78,7 +78,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Resource Include="Noise.ps" />
+    <Resource Include="NoiseEffect\Noise.ps" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -88,7 +88,7 @@
     <Resource Include="Resources\Images\noise.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Noise.fx" />
+    <Content Include="NoiseEffect\Noise.fx" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

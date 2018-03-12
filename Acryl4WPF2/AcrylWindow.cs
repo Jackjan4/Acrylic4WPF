@@ -10,7 +10,7 @@ using System.Windows.Media;
 using System.Windows.Shapes;
 
 
-namespace Acryl4WPF {
+namespace Acrylic4WPF {
 
     internal enum AccentState {
         ACCENT_DISABLED = 1,
@@ -161,8 +161,9 @@ namespace Acryl4WPF {
                 OnPropertyChanged("NoiseRatio");
             }
         }
-
         private double _noiseRatio;
+
+
 
         /// <summary>
         /// Event implementation
@@ -248,8 +249,8 @@ namespace Acryl4WPF {
             });
 
             // Add the noise effect to the rectangle
-            NoiseEffect fx = new NoiseEffect();
-            BindingOperations.SetBinding(fx, NoiseEffect.RatioProperty, new Binding {
+            NoiseEffect.NoiseEffect fx = new NoiseEffect.NoiseEffect();
+            BindingOperations.SetBinding(fx, NoiseEffect.NoiseEffect.RatioProperty, new Binding {
                 Path = new PropertyPath("NoiseRatio"),
                 TargetNullValue = 0.1,
                 FallbackValue = 0.1,
@@ -376,7 +377,7 @@ namespace Acryl4WPF {
                 Foreground = Brushes.Transparent
             };
             ResourceDictionary res = new ResourceDictionary {
-                Source = new Uri("/Acryl4WPF;component/XAML/StyleResources.xaml", UriKind.RelativeOrAbsolute)
+                Source = new Uri("/Acrylic4WPF;component/XAML/StyleResources.xaml", UriKind.RelativeOrAbsolute)
             };
             dragButton.Style = res["NoHoverStyle"] as Style;
             dragButton.PreviewMouseLeftButtonDown += (sender, e) => {
@@ -460,16 +461,16 @@ namespace Acryl4WPF {
 
 
 
-        // ==== Magic shit from here: https://blogs.msdn.microsoft.com/llobo/2006/08/01/maximizing-window-with-windowstylenone-considering-taskbar/
+        // ==== Magic code from here: https://blogs.msdn.microsoft.com/llobo/2006/08/01/maximizing-window-with-windowstylenone-considering-taskbar/
         // All credits go to: LesterLobo
-        // Code for preventing window to go out of area - because windows with no WindowStyle do that 
+        // Code for preventing window to go out of area when maximizing - because windows with no WindowStyle do that; WPF bug
 
 
-        private static System.IntPtr WindowProc(
-              System.IntPtr hwnd,
+        private static IntPtr WindowProc(
+              IntPtr hwnd,
               int msg,
-              System.IntPtr wParam,
-              System.IntPtr lParam,
+              IntPtr wParam,
+              IntPtr lParam,
               ref bool handled) {
             switch (msg) {
                 case 0x0024:
@@ -478,7 +479,7 @@ namespace Acryl4WPF {
                     break;
             }
 
-            return (System.IntPtr)0;
+            return (IntPtr)0;
         }
 
         private static void WmGetMinMaxInfo(System.IntPtr hwnd, System.IntPtr lParam) {

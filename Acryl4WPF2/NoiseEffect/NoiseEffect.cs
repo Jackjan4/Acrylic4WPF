@@ -5,7 +5,7 @@ using System.Windows.Media.Effects;
 using System.Windows.Media.Imaging;
 
 
-namespace Acryl4WPF
+namespace Acrylic4WPF.NoiseEffect
 {
     public class NoiseEffect : ShaderEffect
     {
@@ -15,11 +15,11 @@ namespace Acryl4WPF
         public NoiseEffect()
         {
             PixelShader pixelShader = new PixelShader();
-            pixelShader.UriSource = new Uri("/Acryl4WPF;component/Noise.ps", UriKind.Relative);
+            pixelShader.UriSource = new Uri("/Acrylic4WPF;component/NoiseEffect/Noise.ps", UriKind.Relative);
             this.PixelShader = pixelShader;
             BitmapImage bitmap = new BitmapImage();
             bitmap.BeginInit();
-            bitmap.UriSource = new Uri("pack://application:,,,/Acryl4WPF;component/Resources/Images/noise.png");
+            bitmap.UriSource = new Uri("pack://application:,,,/Acrylic4WPF;component/Resources/Images/noise.png");
             bitmap.EndInit();
             this.RandomInput =
                 new ImageBrush(bitmap)
