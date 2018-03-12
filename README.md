@@ -1,6 +1,7 @@
 # Acrylic4WPF
 
 Acrylic4WPF is a remake of the [Acrylic Material](https://docs.microsoft.com/en-us/windows/uwp/design/style/acrylic) design from Microsoft that can only be used in UWP.
+
 *This library is based on the work of [bbougot](https://github.com/bbougot/AcrylicWPF). All credits for creating transparency/blur effects go to him.*
 
 
