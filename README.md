@@ -5,7 +5,8 @@ Acrylic4WPF is a remake of the [Acrylic Material](https://docs.microsoft.com/en-
 *This library is based on the work of [bbougot](https://github.com/bbougot/AcrylicWPF). All credits for creating transparency/blur effects go to him.*
 
 
-![Example image; empty window with transparent bg](https://i.imgur.com/kKd0Vw6.jpg)
+![Example image; empty window with transparent bg](https://i.imgur.com/GwuNif7.jpg)
+*Example image that shows a nearly empty acrlic window where the buttons, beside the close buttons are deactivated*
 
 
 ## Download
