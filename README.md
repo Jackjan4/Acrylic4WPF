@@ -12,6 +12,7 @@ Just download one of the releases here in GitHub or compile the project for your
 ## Usage
 
 When creating a new window in WPF, instead of extending the ````Window```` class you should extend the ````AcrylWindow```` class. You need to to this both in XAML and in Code.
+Styling your other controls like buttons etc. to look acrylic compatible has to be done by yourself, however most work is already done by removing borders and setting transparent backgrounds.
 
 
 ## Custimization
