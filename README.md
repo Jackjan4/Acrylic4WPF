@@ -29,7 +29,7 @@ Styling your other controls like buttons etc. to look acrylic compatible has to 
 
 - Do NOT change WindowStyle in your window, since the TitleBar is redesigned in this libary and changing causes crashes or two TitleBars
 - Since WPF has a maximizing bug (maximizing the window larger than the screen actually is), when WindowStyle is set to None, this library uses aditional code the work around this bug. Still, it's not perfect, so display error can occur in rare cases. Mostly, when the user uses your app on two screens.
-- 
+- AcrylWindows are not resizable yet, since it has to be implemented manually.
 
 
 ## Further Information / ToDo
